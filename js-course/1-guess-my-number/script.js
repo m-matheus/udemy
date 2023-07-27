@@ -12,9 +12,10 @@ document.querySelector('.guess').value = 10;
 // para inputs onde não tem conteudo de texto, mas sim uma valor "vazio" 
 */
 
-const secretNumber = Math.round(Math.random() * 20);
+let secretNumber = Math.round(Math.random() * 20);
 let score = 20;
 console.log(secretNumber);
+
 document.querySelector('.check').addEventListener('click', function () {
     const guess = Number(document.querySelector('.guess').value);
     console.log(typeof guess, guess);
@@ -27,7 +28,6 @@ document.querySelector('.check').addEventListener('click', function () {
     else if (guess === secretNumber) {
         document.querySelector('.message').textContent = '🎉 Correct number';
         document.querySelector('.number').textContent = secretNumber;
-
         document.querySelector('body').style.backgroundColor = '#60b347';
         document.querySelector('.number').style.width = '30rem';
     }
@@ -50,4 +50,18 @@ document.querySelector('.check').addEventListener('click', function () {
     } else {
         document.querySelector('.highscore').textContent = score;
     }
+
+
 });
+
+document.querySelector('.again').addEventListener('click', function() {
+    document.querySelector('.message').textContent = 'Start guessing...';
+    document.querySelector('.score').textContent = 20;
+    document.querySelector('body').style.backgroundColor = '#222';
+    document.querySelector('.number').style.width = '15rem';
+    document.querySelector('.number').textContent = '?';
+    secretNumber = Math.round(Math.random() * 20);
+    console.log(secretNumber);
+
+});
+
