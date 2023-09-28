@@ -12,6 +12,7 @@ document.querySelector('.guess').value = 10;
 // para inputs onde não tem conteudo de texto, mas sim uma valor "vazio" 
 */
 
+
 let secretNumber = Math.round(Math.random() * 20);
 let score = 20;
 let highscore = 0;
