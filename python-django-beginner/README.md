@@ -11,3 +11,7 @@
 
 *RODAR O SERVIDOR*
     python manage.py runserver
+
+
+*MIGRAR MODELS*
+    python manage.py makemigrations
