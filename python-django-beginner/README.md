@@ -4,7 +4,7 @@
 - crtl + c -> para o servidor
 
 *ATIVAR VIRTUAL ENVIROMENT*
-    virtual-environment\Scripts\avtivate
+    virtual-environment\Scripts\activate
 
 *CRIAR DJANGO APP (interno)*
     django-admin startapp <nome>
