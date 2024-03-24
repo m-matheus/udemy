@@ -13,5 +13,5 @@
     python manage.py runserver
 
 
-*MIGRAR MODELS*
+*MIGRAR/CRIAR MODELS*
     python manage.py makemigrations
